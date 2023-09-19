@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="shortcut icon" href="img/arquitectura2.jpg">
+    
+</head>
+<body style="background-image: url('img/arquitectura2.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <div class="container">
+        <div class="col-6 p-3 bg-transparent text-white">
+            <h1>Registre sus datos</h1>
+            <form action="" method="POST">  
+                <label for="curso">Seleccione el tipo de curso:</label>
+                <select id="curso" name="curso" required>
+                    <option value="Jefe de área">Jefe de área</option>
+                    <option value="Trabajador autorizado">Trabajador autorizado</option>
+                    <option value="Reentrenamiento">Reentrenamiento</option>
+                    <option value="Coordinador de alturas">Coordinador de alturas</option>
+                    <option value="Actualización de coordinador">Actualización de coordinador</option>
+                </select>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="contacto">Número de Contacto:</label>
+                <input type="number" id="contacto" name="contacto" required>
+
+                <label for="cedula">Cédula:</label>
+                <input type="number" id="cedula" name="cedula" required>
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+                <a href="index.html">
+                    <button type="button" class="btn btn-secondary">Iniciar Sesion</button>
+                </a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
